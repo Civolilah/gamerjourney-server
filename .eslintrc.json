@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["unused-imports", "@typescript-eslint"],
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-var": "error",
+    "strict": ["error", "global"],
+    "no-unused-vars": "error",
+    "func-style": ["error", "declaration"],
+    "prefer-arrow-callback": "error",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-console": "warn"
+  }
+}
